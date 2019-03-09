@@ -1,0 +1,9 @@
+RewriteEngine On
+RewriteRule ^add?$ add_post.php
+RewriteRule ^view?$ paginated_data.php
+RewriteRule ^view/([0-9]+) paginated_data.php?page=$1
+RewriteRule ^search$ search_data.php
+RewriteRule ^search/([0-9]+) search_data.php?page=$1
+RewriteRule ^load-edit/([0-9]+) load_single_user.php?id=$1 
+RewriteRule ^edit edit_user_profile.php?id=$1
+RewriteRule ^delete delete_content.php
